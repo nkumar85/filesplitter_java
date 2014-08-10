@@ -1,0 +1,173 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>File Splitter HELP</title>
+<meta name="Microsoft Theme" content="aftrnoon 011">
+</head>
+
+<body background="../images/background_aftrnoon.gif" bgcolor="#FFFFFF" text="#000000" link="#983738" vlink="#703637" alink="#C76565">
+
+<p align="center"><u><b><font size="7" color="#FF0000"><a name="start"></a>File 
+Splitter HELP</font></b></u></p>
+<p><b>1)<a href="#sf"> Splitting large file</a></b></p>
+<p><b>2) <a href="#css">Choosing Split Size</a></b></p>
+<p><b>3) <a href="#sm">Splitting Manually</a></b></p>
+<p><b>4) <a href="#cms">Clearing Manual Split </a></b></p>
+<p><b>5) <a href="#rsf">Redirecting split files</a></b></p>
+<p><b>6) <a href="#command">Command Line Options</a></b></p>
+<p><b>7) <a href="#check">Checking File Values</a></b></p>
+<p><b>8) <a href="#open">Opening Destination Folder</a></b></p>
+<p>&nbsp;</p>
+<p><u><b><font size="5" color="#000080">Miscellaneous:</font></b></u></p>
+<p><b><a href="#ab">ABOUT FileSplitter</a></b></p>
+<p><b><a href="#ty">Thank You</a></b></p>
+<p><b><a href="#com">Comments</a></b></p>
+<p><b><a href="#ref">References</a></b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>
+-------------------------------------------------------------------------------------</b></p>
+<p><u><b><font size="5" color="#000080"><a name="sf"></a>Splitting File</font></b></u></p>
+<p><b>Drag files from Windows Explorer and simply drop on the button on left top 
+corner.</b></p>
+<p><b>By default split files are directed to the directory of the Input file. 
+Note that the Input File is not affected. The program also writes batch file which can be used 
+merge split files. Hence this application is not required to merge the split files.</b></p>
+<p><b>
+<a href="#start">&nbsp;back to top</a></b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="css"></a>Choosing Split Size</font></u></b></p>
+<p><b>Two Options are provided to choose size of batch file </b></p>
+<p><b>1) Predefined:</b></p>
+<p><b>This consists of predefined batch sizes like 1MB, Floppy Disc(1.38 MB), 
+CD(650 MB) etc.. The drop down box allows to choose any of the choices in it.</b></p>
+<p><b>2) Manual:</b></p>
+<p><b>If you are not satisfied with predefined sizes you can choose custom size 
+by selecting &quot;Manual&quot; RadioButton. A TextField is provided to Enter the custom Size followed by 
+a drop down box having desired scaling factors.</b></p>
+<p><b>
+<a href="#start">&nbsp;back to top</a></b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="sm"></a>Splitting Manually</font></u></b></p>
+<p><b>If you desire to split manually, check the &quot;Manual Split&quot; Box in the area 
+titled &quot;Split Manually&quot;. This enables a browse button. Click on the &quot;Browse&quot; button to select the 
+Input File. When done the button text changes to &quot;Split&quot;. Now click on the button named &quot;Split&quot; to 
+split. </b></p>
+<p><b>Note: If you don't choose any file the Button text remains as &quot;Browse&quot;.</b></p>
+<p><b>&nbsp;<a href="#start">&nbsp;back to top</a></b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="cms"></a>Clear Manual Split</font></u></b></p>
+<p><b>Suppose if you choose a wrong Input File in the Manual Selection and you 
+don't want to split it OR if you decide choose another file, then in order to clear the old file 
+simply uncheck the &quot;Clear Selection&quot; box which clears the file to be split.</b></p>
+<p><b>Note: While checking &quot;Manual Split&quot; its text changes to &quot;Clear Selection&quot;.</b></p>
+<p><b>&nbsp;<a href="#start">&nbsp;back to top</a></b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="rsf"></a>Redirect Split Files</font></u></b></p>
+<p><b>If you want to redirect the output split files to another directory just 
+check on &quot;ReDirect Output&quot; box found in&nbsp; Options area. This enables a &quot;Browse&quot; button adjoining 
+to it. Clicking on this pops up a Output Directory Chooser Dialog. Choose the desired Output Directory 
+from the dialog.</b></p>
+<p><b>&nbsp;<a href="#start">back to top</a></b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="command"></a>Command Line 
+Options:</font></u></b></p>
+<p><b>To use command line option after setting classpath follow the syntax as 
+given below:</b></p>
+<p><b>java -jar FileSplitter.jar &lt;source_file&gt; &lt;Split Size&gt; &lt;Destination_Path&gt;<br>
+&nbsp;</b></p>
+<p><b>The last argument is optional. If Nothing specified in last argument the 
+default directory in which the source file resides is chosen as Destination. 
+Note: you need to type full file paths for Source as well as Destination.</b></p>
+<p><b>Examples:</b></p>
+<p><b>example 1: java -jar FileSplitter.jar &lt;drive&gt;:\My_Folder\Myfile 
+12345 </b></p>
+<p><b>example 2: java -jar FileSplitter.jar &lt;drive&gt;\My_Folder\Myfile 
+12345 &lt;Drive&gt;:\MyOutputPath</b></p>
+<p><b><a href="#start">back to top</a></b></p>
+<p>*******************************************************************</p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="check"></a>Checking File Values</font></u></b>:</p>
+<p><b>Java provides various methods for checking the security of a stream. I 
+have simply implemented those streams. This includes CRC32,MD5,MD2,SHA. Why is 
+this included here?</b></p>
+<p><b>1) For my Software.</b></p>
+<p><b>2) General Purpose.</b></p>
+<p><b>Before Splitting the software computes either of values specified above. 
+Although not implemented yet, the future versions would definitely include this 
+feature. One of the implication is to check original file value against&nbsp; 
+merged file.</b></p>
+<p><b>Also it can be used for checking any files. Remember for huge files say 
+above 200MB, the computation is slower and the program appears to be hanged. But 
+this is not the case. Please wait for a while (definitely not more than 1 minute 
+up to file size of 800MB ). Don't forget to refresh your OS after computing for 
+large files.</b></p>
+<p><b><a href="#start">back to top</a></b></p>
+<p>*******************************************************************</p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="open"></a>Open Destination 
+Folder:</font></u></b></p>
+<p><b>In the options area just check/uncheck &quot;Open Destination Folder&quot; to 
+enable/disable the feature. This feature enables you to open the destination 
+folder where the split files are directed. This feature is implemented by&nbsp; 
+integrating with Windows Explorer.</b></p>
+<p><b><a href="#start">back to top</a></b></p>
+<p>*******************************************************************</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="ab"></a>About:</font></u></b></p>
+<p><b>Looks Similar to Chainsaw File Splitter.</b></p>
+<p><b>FileSplitter by Nandakumar. BANGALORE, INDIA</b></p>
+<p><b>&nbsp;<a href="#start">&nbsp;back to top</a></b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="ty"></a>Thank You:</font></u></b></p>
+<p><b>Thank you for choosing my software. I hope you enjoy using it. If you want 
+to make changes to existing software, please send me comments about the 
+software. Whether your comments are positive or negative, I will forward you a 
+zip file containing source files. Again please help me to improve my coding 
+standard. Also if you have suggestions don't forget to include in the mail.</b></p>
+<p><b>
+<a href="#start">&nbsp;back to top</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="com"></a>Comments:</font></u></b></p>
+<p><b>I am still a beginner to programming world. Please give your suggestions 
+to improve my coding standards.</b></p>
+<p><b>Comments and bugs can be mailed to me at: </b>
+<a href="mailto:nandakumar.nie@gmail.com?subject=Comments">nandakumar.nie@gmail.com</a></p>
+<p>
+<b><a href="#start">&nbsp;back to top</a></b>&nbsp;&nbsp; </p>
+<p><b>
+*************************************************************</b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b><u><font size="5" color="#000080"><a name="ref"></a>References:</font></u></b></p>
+<p><b>1) Sun Java Documentation v1.5.1. available at
+<a href="http://www.sun.com">www.sun.com</a> </b></p>
+<p><b>2) Sun Java Tutorial.</b></p>
+<p>&nbsp;</p>
+
+<p>
+<b><a href="#start">&nbsp;back to top</a></b></p>
+<p align="center"><u><b><font size="6">END OF HELP </font></b></u></p>
+
+</body>
+
+</html>
